@@ -39,4 +39,12 @@ git add .
 git add nombreDelArchivo.extensión
 ```
 
+* Crear el registro de los cambios realizados(commit):
+```bash
+git commit -m "un comentario sobre el cambio"
+```
+* Para ver una línea de tiempo de los commits que hemos realizado:
+```bash
+git log
+```
 
