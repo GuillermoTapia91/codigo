@@ -4,26 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width>,    initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css"/>
   <title>Document</title>
 </head>
-
+<!--
+<style>
+  p {
+    border: solid 1px 
+  }
+</style>
+  -->
 <body>
   <section>
-    <h1>Formularios</h1>
+    <h1 style="color: green; font-size: 60px;">Formularios</h1><!--con el atributo style podemos agregar color y tamamño,debemos colocar ; despues de cada estilo-->
     <form><!--form sirve para crear un formulario-->
       <!--los inputs tienen tipos,por defecto son de tipo text pero hay mas-->
       <p>
-        <input type="text" name="name" placeholder="Ingresa tu nombre" required autocomplete="off"/>
+        <input type="text" class="input-form" name="name" placeholder="Ingresa tu nombre" required autocomplete="off"/>
         <!-- required es para hacer un campo obligatorio, para el futuro es importante siempre poner name para que cargue el backend-->
       </p>
 
       <p>
-        <input type="email" name="email" placeholder="Ingresa tu correo" readonly value="linder@gmail.com"/><!--readonly es para solo lectura, pero se envia el dato igual -->
+        <input type="email" class="input-form" name="email" placeholder="Ingresa tu correo" readonly value="1234@gmail.com"/><!--readonly es para solo lectura, pero se envia el dato igual -->
       </p>
 
       <p>
-        <input type="password" name="password" placeholder="Ingresa una contraseña segura" disabled /><!--disable no envia el dato-->
+        <input type="password" class="input-form" name="password" placeholder="Ingresa una contraseña segura" disabled /><!--disable no envia el dato-->
       </p>
       
       <p>
@@ -74,7 +81,7 @@
       </p>
 
       <p> 
-        <button type="submit">Enviar datos</button><!--debo poner el tipo submit para que envien los datos, es mejor usar button que input-->
+        <button id="boton-enviar" type="submit">Enviar datos</button><!--debo poner el tipo submit para que envien los datos, es mejor usar button que input-->
       </p>
       
     </form>

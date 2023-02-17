@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+input {
+    width: 350px;
+    padding: 10px;
+}
+
+.input-form {
+    border-radius: 12px;
+    border: 0.5px solid #ccc;
+
+}
+/* los id se usan para casos específicos donde no queremos reutilizar estilso
+id => #id */
+#boton-enviar {
+    background-color: #1DCDC0;
+    border: none;
+    color:white;
+    width: 250px;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer /* para que salga una mano*/
+    }
+#boton-enviar:hover {
+    background-color: burlywood;
+    border: 1px solid #000
+}
